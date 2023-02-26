@@ -1,0 +1,29 @@
+query articles{
+  articles {
+    data {
+      id
+      attributes {
+        title
+        body
+        date
+        description
+        slug
+      }
+    }
+  }
+}
+
+query article($id: ID!) {
+  article(id: $id) {
+    data {
+      id
+      attributes {
+        title
+        body
+        date
+        description
+        slug
+      }
+    }
+  }
+}
